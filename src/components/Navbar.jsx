@@ -39,11 +39,11 @@ function Navbar() {
     // </div>
     <header>
       <div>
-        <h3 className="interFont">
+        <h2 className="interFont">
           James Jankowski{" "}
           <span className="interFontExtraLight">Enterprises</span>
-          <p className="montserratFontLight">Concrete Specialists</p>
-        </h3>
+        </h2>
+        <h3 className="montserratFontLight goldFont">Concrete Specialists</h3>
       </div>
       <nav ref={navRef}>
         <Link className="link" to="/">

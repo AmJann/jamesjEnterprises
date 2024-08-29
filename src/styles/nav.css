@@ -31,10 +31,9 @@
 :root {
   --mainColor: rgb(28, 34, 70);
   --mainColorLight: rgb(46, 57, 116);
-  --secondaryColor: rgb(158, 157, 157);
+  --secondaryColor: rgb(251, 192, 31);
   --textColor: rgb(245, 242, 242);
 }
-
 header {
   display: flex;
   align-items: center;
@@ -52,7 +51,7 @@ nav .link {
 }
 
 nav .link:hover {
-  color: var(--secondaryColor);
+  color: rgb(251, 192, 31);
 }
 
 header .nav-btn {
@@ -72,6 +71,10 @@ header .nav-btn {
   padding-left: 3.7px;
   visibility: hidden;
   opacity: 0;
+}
+
+.goldFont {
+  color: rgb(251, 192, 31);
 }
 
 @media only screen and (max-width: 1024px) {

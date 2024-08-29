@@ -1,3 +1,10 @@
+:root {
+  --mainColor: rgb(28, 34, 70);
+  --mainColorLight: rgb(46, 57, 116);
+  --secondaryColor: rgb(158, 157, 157);
+  --textColor: rgb(245, 242, 242);
+}
+
 .interFont {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -35,5 +42,60 @@
 
 .missionContainer {
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  margin-left: 1vw;
+}
+
+.formContainer {
+  border: 3 px solid black;
+  width: 50vw;
+}
+
+.blueFont {
+  color: var(--mainColorLight);
+}
+
+.missionContentConatiner {
+  width: 50vw;
+  padding-right: 4vw;
+}
+
+.header {
+  font-size: 2.75vw;
+}
+
+.subheader {
+  font-size: 2vw;
+}
+
+.content {
+  font-size: 1.25vw;
+}
+
+.subHeaderInfoContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em;
+}
+@media only screen and (max-width: 1024px) {
+  .missionContentConatiner {
+    width: 100vw;
+  }
+
+  .header {
+    font-size: 5vw;
+  }
+
+  .subheader {
+    font-size: 4vw;
+  }
+
+  .content {
+    font-size: 2.5vw;
+  }
+
+  .floridaImageContainer {
+    width: 13vw;
+    margin-left: 2vw;
+  }
 }
