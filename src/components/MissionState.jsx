@@ -1,7 +1,5 @@
 import React from "react";
-import { FaSun } from "react-icons/fa";
 import Florida from "../assets/florida-no-bg.png";
-import ContactForm from "./ContactForm";
 import "../styles/main.css";
 
 function MissionState() {
