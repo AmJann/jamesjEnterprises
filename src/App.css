@@ -144,6 +144,7 @@ body {
   display: flex;
   width: 100%;
   height: auto;
+  margin: 2em 0;
 }
 
 img {
@@ -153,7 +154,7 @@ img {
 
 .overlayText {
   position: absolute;
-  font-size: 2em;
+  font-size: 3.25vw;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
