@@ -18,16 +18,14 @@ function MissionState() {
         </div>
       </div>
       <p className="content interFontLight">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
-        alias perspiciatis obcaecati nam, quasi quibusdam optio explicabo
-        minima, accusantium voluptatem, aliquid qui sequi nemo dolorum
-        distinctio atque nostrum! Vero, voluptas. Lorem ipsum, dolor sit amet
-        consectetur adipisicing elit. Reiciendis natus itaque quaerat officia
-        quisquam voluptatibus voluptas totam incidunt alias consequatur aut
-        maiores praesentium soluta exercitationem voluptatem, error ab porro eum
-        est ipsa voluptate dignissimos quod? Explicabo, esse repellendus ad
-        magnam minima magni labore mollitia dicta nobis voluptatum excepturi
-        officia? Repellendus.
+        At James Jankowski Enterprises, our mission is to deliver the highest
+        quality concrete solutions with unparalleled craftsmanship and
+        integrity. With 40 years of experience serving Southwest Florida, we are
+        committed to building lasting relationships with our clients, providing
+        reliable, innovative, and sustainable construction services that stand
+        the test of time. We take pride in our deep roots in the community and
+        our unwavering dedication to excellence, ensuring that every project
+        reflects our legacy of trust, expertise, and exceptional service.
       </p>
       {/* <ContactForm /> */}
     </div>
