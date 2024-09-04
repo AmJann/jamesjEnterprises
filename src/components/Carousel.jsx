@@ -101,8 +101,10 @@ const Carousel = () => {
         {images.map((image, index) => (
           <div key={index} className="carousel-item">
             <img className="slideImage" src={image} alt={`Slide ${index}`} />
-            <div className="carousel-text">
-              <h2 className="descriptionText">{currentMessage}</h2>
+            <div className="InterFont carousel-text">
+              <h2 className="interFontLight descriptionText">
+                {currentMessage}
+              </h2>
               <p className="descriptionSubText">{currentDescription}</p>
             </div>
           </div>

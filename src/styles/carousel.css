@@ -4,6 +4,36 @@
   overflow: hidden;
 }
 
+.interFont {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.interFontLight {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.montserratFont {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.montserratFontLight {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .carousel-inner {
   display: flex;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
@@ -71,7 +101,7 @@
 
 .carousel-text {
   position: absolute;
-  font-size: 3.25vw;
+  font-size: 2.3vw;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -93,5 +123,17 @@
 @media only screen and (max-width: 1024px) {
   .carousel-item img {
     width: 150%;
+  }
+
+  /* .carousel-text {
+    font-size: 10vw;
+  }
+
+  .descriptionText {
+    font-size: 0.8vw;
+  } */
+
+  .carousel-button {
+    font-size: 3em;
   }
 }
