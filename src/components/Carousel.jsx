@@ -5,6 +5,7 @@ import jamesDriveway from "../assets/jamesDrivewayResize.jpeg";
 
 const Carousel = () => {
   const images = [
+    jamesDriveway,
     charlotteHarbor,
     jamesDriveway,
     charlotteHarbor,
