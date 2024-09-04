@@ -32,7 +32,7 @@
   --mainColor: rgb(28, 34, 70);
   --mainColorLight: rgb(46, 57, 116);
   --secondaryColor: rgb(251, 192, 31);
-  --textColor: rgb(245, 242, 242);
+  --textColor: rgb(244, 241, 241);
 }
 header {
   display: flex;
@@ -85,6 +85,7 @@ header .nav-btn {
 
 .goldFont {
   color: rgb(251, 192, 31);
+  font-size: 0.8vw;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -129,5 +130,9 @@ header .nav-btn {
   .menu {
     visibility: visible;
     opacity: 1;
+  }
+
+  .goldFont {
+    font-size: 2vw;
   }
 }

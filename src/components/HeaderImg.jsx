@@ -1,5 +1,5 @@
 import React from "react";
-import charlotteHarbor from "../assets/charlotteHarbor.png";
+import charlotteHarbor from "../assets/charlotteHarbor.jpg";
 import "../App.css";
 
 function HeaderImg() {
@@ -11,7 +11,7 @@ function HeaderImg() {
         alt="charlotte harbor sunset pier"
       ></img>
       <h2 className="interFont overlayText">
-        Charlotte county's concrete professionals since 1983
+        Charlotte County's Concrete Professionals since 1983
       </h2>
     </div>
   );

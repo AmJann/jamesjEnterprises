@@ -58,6 +58,7 @@
 .missionContentConatiner {
   width: 50vw;
   padding: 0 2vw;
+  margin-top: 2em;
 }
 
 .header {
@@ -81,6 +82,14 @@
 .subInfo {
   font-size: 1vw;
 }
+
+.phone {
+  background-color: var(--mainColor);
+  padding: 0.8vw;
+  border-radius: 30px;
+  color: var(--textColor);
+}
+
 @media only screen and (max-width: 1024px) {
   .missionContentConatiner {
     width: 100vw;
@@ -105,5 +114,19 @@
 
   .subInfo {
     font-size: 3vw;
+  }
+
+  .phone {
+    background-color: var(--mainColor);
+    padding: 3vw;
+    border-radius: 50px;
+    color: var(--textColor);
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 500) {
+  .phone {
+    padding: 2vw;
+    border-radius: 30px;
   }
 }

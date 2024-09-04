@@ -1,14 +1,13 @@
 import React from "react";
 import HeaderImg from "../components/HeaderImg";
 import MissionState from "../components/MissionState";
-import SubHeaderInfo from "../components/SubHeaderInfo";
+import Carousel from "../components/Carousel";
 
 function Home() {
   return (
     <>
-      <SubHeaderInfo />
-      <HeaderImg />
-      {/* <Stats /> */}
+      {/* <HeaderImg /> */}
+      <Carousel />
       <MissionState />
     </>
   );
