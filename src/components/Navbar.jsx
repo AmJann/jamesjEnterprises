@@ -39,7 +39,7 @@ function Navbar() {
     // </div>
     <header className="navHeader">
       <div>
-        <h2 className="interFont">
+        <h2 className="interFont jje">
           James Jankowski{" "}
           <span className="interFontExtraLight">Enterprises</span>
         </h2>
