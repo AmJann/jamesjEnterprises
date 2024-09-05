@@ -4,7 +4,7 @@ import "../styles/main.css";
 
 function MissionState() {
   return (
-    <div className="missionContentConatiner">
+    <div className="missionContentContainer">
       <div className="missionContainer">
         <div>
           <h2 className="montserratFont blueFont header">Trusted and Local</h2>

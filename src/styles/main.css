@@ -61,10 +61,10 @@
   color: var(--mainColorLight);
 }
 
-.missionContentConatiner {
+.missionContentContainer {
   width: 55vw;
   padding: 0 2vw;
-  margin-top: 2em;
+  margin-top: 4em;
   margin-bottom: 2em;
   padding-bottom: 3rem;
   border-bottom: 2px solid #f8d110de;
@@ -102,8 +102,9 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .missionContentConatiner {
+  .missionContentContainer {
     width: 100vw;
+    margin-top: 2em;
   }
 
   .header {
