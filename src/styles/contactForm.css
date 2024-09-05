@@ -1,0 +1,37 @@
+.my-5 {
+  /* margin: 0 !important;
+  padding: 0 !important; */
+  border-left: 2px solid #f8d210;
+  width: 50vw;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.montserratFont {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.mt-4 {
+  background-color: rgb(28, 34, 70);
+  border: 1px solid rgb(28, 34, 70);
+}
+.mt-4:hover {
+  background-color: rgb(28, 34, 70);
+  border: 1px solid rgb(28, 34, 70);
+  color: #f8d210;
+}
+
+.contactUs {
+  color: rgb(46, 57, 116);
+}
+
+@media only screen and (max-width: 1024px) {
+  .my-5 {
+    width: 100vw;
+  }
+}

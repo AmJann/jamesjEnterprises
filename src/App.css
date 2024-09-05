@@ -159,6 +159,14 @@ img {
 .companyName {
   flex-direction: column;
 }
+
+.missionContactContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  /* margin-top: 2em; */
+}
 @media only screen and (max-width: 1024px) {
   #charlotteHarbor {
     border-radius: 8px;
@@ -167,5 +175,12 @@ img {
 
   .overlayText {
     font-size: 3.6vw;
+  }
+
+  .missionContactContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
   }
 }

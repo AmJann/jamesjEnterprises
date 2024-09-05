@@ -96,24 +96,24 @@ const Carousel = () => {
   }, [currentIndex, images.length]);
 
   return (
-    <div className="carousel">
-      <div className="carousel-inner" ref={carouselInnerRef}>
+    <div className="carousel1">
+      <div className="carousel-inner1" ref={carouselInnerRef}>
         {images.map((image, index) => (
-          <div key={index} className="carousel-item">
-            <img className="slideImage" src={image} alt={`Slide ${index}`} />
-            <div className="InterFont carousel-text">
-              <h2 className="interFontLight descriptionText">
+          <div key={index} className="carousel-item1">
+            <img className="slideImage1" src={image} alt={`Slide ${index}`} />
+            <div className="InterFont carousel-text1">
+              <h2 className="interFontLight descriptionText1">
                 {currentMessage}
               </h2>
-              <p className="descriptionSubText">{currentDescription}</p>
+              <p className="descriptionSubText1">{currentDescription}</p>
             </div>
           </div>
         ))}
       </div>
-      <button className="carousel-button left" onClick={goToPrevious}>
+      <button className="carousel-button1 left1" onClick={goToPrevious}>
         &#10094;
       </button>
-      <button className="carousel-button right" onClick={goToNext}>
+      <button className="carousel-button1 right1" onClick={goToNext}>
         &#10095;
       </button>
     </div>

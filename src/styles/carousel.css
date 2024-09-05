@@ -1,4 +1,4 @@
-.carousel {
+.carousel1 {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -34,13 +34,13 @@
   font-style: normal;
 }
 
-.carousel-inner {
+.carousel-inner1 {
   display: flex;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   width: 100%;
 }
 
-.carousel-item {
+.carousel-item1 {
   min-width: 100%;
   position: relative;
   overflow: hidden;
@@ -48,23 +48,23 @@
   transition: opacity 0.5s ease-in-out; /* Add transition for opacity */
 }
 
-.carousel-item.active {
+.carousel-item1.active {
   opacity: 1; /* Fully opaque when active */
 }
 
-.carousel-item img {
+.carousel-item1 img {
   width: 100%;
   display: block;
   height: 75vh;
   object-fit: cover;
 }
 
-.carousel-item img {
+.carousel-item1 img {
   width: 100%;
   display: block;
 }
 
-.carousel-item::before {
+.carousel-item1::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -79,7 +79,7 @@
   );
 }
 
-.carousel-button {
+.carousel-button1 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -91,15 +91,15 @@
   font-size: 5em;
 }
 
-.carousel-button.left {
+.carousel-button1.left1 {
   left: 10px;
 }
 
-.carousel-button.right {
+.carousel-button1.right1 {
   right: 10px;
 }
 
-.carousel-text {
+.carousel-text1 {
   position: absolute;
   font-size: 2.3vw;
   top: 70%;
@@ -115,26 +115,26 @@
   /* opacity: 0.9; */
 }
 
-.descriptionText {
+.descriptionText1 {
   color: white;
   z-index: 2;
 }
 
 @media only screen and (max-width: 1024px) {
-  .carousel-item img {
+  .carousel-item1 img {
     width: 120%;
     height: 60vh;
   }
 
-  .carousel-text {
+  .carousel-text1 {
     font-size: 2rem;
   }
 
-  .descriptionText {
+  .descriptionText1 {
     font-size: 1.8rem;
   }
 
-  .carousel-button {
+  .carousel-button1 {
     font-size: 3em;
   }
 }
