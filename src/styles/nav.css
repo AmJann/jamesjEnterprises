@@ -64,7 +64,7 @@ nav .link:hover {
   color: rgb(251, 192, 31);
 }
 
-header .nav-btn {
+.navHeader .nav-btn {
   padding: 5px;
   cursor: pointer;
   background: transparent;
@@ -89,12 +89,12 @@ header .nav-btn {
 }
 
 @media only screen and (max-width: 1024px) {
-  header .nav-btn {
+  .navHeader .nav-btn {
     visibility: visible;
     opacity: 1;
   }
 
-  header nav {
+  .navHeader nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -110,7 +110,7 @@ header .nav-btn {
     transform: translateY(-100vh);
   }
 
-  header .responsive_nav {
+  .navHeader .responsive_nav {
     transform: none;
   }
   nav {
@@ -130,5 +130,9 @@ header .nav-btn {
   .menu {
     visibility: visible;
     opacity: 1;
+  }
+
+  .navHeader {
+    height: 120px;
   }
 }
