@@ -126,13 +126,13 @@
     height: 60vh;
   }
 
-  /* .carousel-text {
-    font-size: 10vw;
+  .carousel-text {
+    font-size: 2rem;
   }
 
   .descriptionText {
-    font-size: 0.8vw;
-  } */
+    font-size: 1.8rem;
+  }
 
   .carousel-button {
     font-size: 3em;

@@ -85,7 +85,7 @@ header .nav-btn {
 
 .goldFont {
   color: rgb(251, 192, 31);
-  font-size: 0.8vw;
+  font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -130,9 +130,5 @@ header .nav-btn {
   .menu {
     visibility: visible;
     opacity: 1;
-  }
-
-  .goldFont {
-    font-size: 2vw;
   }
 }
