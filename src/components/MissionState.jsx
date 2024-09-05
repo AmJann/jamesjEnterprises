@@ -8,7 +8,7 @@ function MissionState() {
       <div className="missionContainer">
         <div>
           <h2 className="montserratFont blueFont header">Trusted and Local</h2>
-          <h6 className="montserratFontLight subheader">
+          <h6 className="montserratFont subheader">
             40+ years of experience in the area
           </h6>
         </div>
@@ -17,7 +17,7 @@ function MissionState() {
           <img src={Florida} alt="outline of the state of Florida"></img>
         </div>
       </div>
-      <p className="content interFontLight">
+      <p className="content montserratFontLight">
         At James Jankowski Enterprises, our mission is to deliver the highest
         quality concrete solutions with unparalleled craftsmanship and
         integrity. With 40 years of experience serving Southwest Florida, we are

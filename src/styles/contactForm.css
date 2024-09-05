@@ -1,12 +1,17 @@
 .my-5 {
   /* margin: 0 !important;
   padding: 0 !important; */
-  border-left: 2px solid #f8d210;
-  width: 50vw;
+  /* border-left: 2px solid #f8d210; */
+  width: 30vw;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  background-color: rgb(235, 234, 232);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
 .montserratFont {
@@ -28,10 +33,17 @@
 
 .contactUs {
   color: rgb(46, 57, 116);
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 1024px) {
   .my-5 {
-    width: 100vw;
+    width: 80vw;
+    /* border-top: 2px solid #f8d210; */
+    border-left: none;
+    padding-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    background-color: rgba(245, 244, 241, 0.979);
   }
 }
