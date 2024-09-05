@@ -34,7 +34,7 @@
   --secondaryColor: rgb(251, 192, 31);
   --textColor: rgb(244, 241, 241);
 }
-header {
+.navHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
