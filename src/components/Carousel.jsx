@@ -103,7 +103,9 @@ const Carousel = () => {
             <img className="slideImage1" src={image} alt={`Slide ${index}`} />
             <div className="textContainer ">
               <h2 className="interFont carousel-text1">{currentMessage}</h2>
-              <p className="descriptionText1">{currentDescription}</p>
+              <a href="tel:+19412043066" className="descriptionText1">
+                {currentDescription}
+              </a>
             </div>
           </div>
         ))}
