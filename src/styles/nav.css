@@ -31,7 +31,7 @@
 :root {
   --mainColor: rgb(28, 34, 70);
   --mainColorLight: rgb(46, 57, 116);
-  --secondaryColor: rgb(251, 192, 31);
+  --secondaryColor: #f8d210;
   --textColor: rgb(244, 241, 241);
 }
 .navHeader {
@@ -61,7 +61,7 @@ nav .link {
 }
 
 nav .link:hover {
-  color: rgb(251, 192, 31);
+  color: #f8d210;
 }
 
 .navHeader .nav-btn {
@@ -84,7 +84,7 @@ nav .link:hover {
 }
 
 .goldFont {
-  color: rgb(251, 192, 31);
+  color: #f8d210;
   font-size: 1.1rem;
 }
 

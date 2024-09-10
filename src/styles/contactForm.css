@@ -35,12 +35,17 @@
   font-weight: 500;
 }
 
+.goldFontContact {
+  color: rgb(28, 34, 70);
+  font-weight: 600;
+}
+
 @media only screen and (max-width: 1024px) {
   .my-5 {
     width: 80vw;
     /* border-top: 2px solid #f8d210; */
     border-left: none;
-    padding-top: 3rem;
+    padding: 2rem 1rem;
     margin-left: 2rem;
     margin-right: 1rem;
     background-color: rgba(245, 244, 241, 0.979);

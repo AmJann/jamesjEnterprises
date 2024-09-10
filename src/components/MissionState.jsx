@@ -1,6 +1,7 @@
 import React from "react";
 import Florida from "../assets/florida-no-bg.png";
 import "../styles/main.css";
+import yellowFlorida from "../assets/yellow-fl-no-bg.png";
 
 function MissionState() {
   return (
@@ -14,7 +15,7 @@ function MissionState() {
         </div>
 
         <div className="floridaImageContainer">
-          <img src={Florida} alt="outline of the state of Florida"></img>
+          <img src={yellowFlorida} alt="outline of the state of Florida"></img>
         </div>
       </div>
       <p className="content montserratFontLight">
