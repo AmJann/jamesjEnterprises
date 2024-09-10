@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Form, Button, Container, Row, Col, Alert } from "react-bootstrap";
+import emailjs from "@emailjs/browser";
 import "../styles/contactForm.css";
 
 const ContactForm = () => {
@@ -12,6 +13,7 @@ const ContactForm = () => {
 
   const [submitted, setSubmitted] = useState(false);
   const [validated, setValidated] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -28,10 +30,60 @@ const ContactForm = () => {
       e.stopPropagation();
     } else {
       e.preventDefault();
-      setSubmitted(true);
+      sendEmail(); // Send contact form email
     }
 
     setValidated(true);
+  };
+
+  // Function to send the contact form email
+  const sendEmail = () => {
+    // Send contact form details to you
+    emailjs
+      .send(
+        import.meta.env.VITE_SERVICE_ID, // Replace with your EmailJS Service ID
+        import.meta.env.VITE_TEMPLATE_ID, // Replace with your EmailJS contact form Template ID
+        formData, // Data from the form
+        import.meta.env.VITE_USER_ID // Replace with your EmailJS User ID
+      )
+      .then(
+        (response) => {
+          console.log(
+            "Contact form email sent successfully!",
+            response.status,
+            response.text
+          );
+          setSubmitted(true);
+          sendThankYouEmail(); // Send the thank-you email after successful form submission
+        },
+        (err) => {
+          console.log("Failed to send contact form email...", err);
+          setError(true);
+        }
+      );
+  };
+
+  // Function to send the thank-you email
+  const sendThankYouEmail = () => {
+    emailjs
+      .send(
+        import.meta.env.VITE_SERVICE_ID, // Replace with your EmailJS Service ID (can be the same)
+        import.meta.env.VITE_THANKYOU_TEMPLATE_ID, // Replace with your EmailJS Thank-You Template ID
+        formData, // Data from the form
+        import.meta.env.VITE_USER_ID // Replace with your EmailJS User ID
+      )
+      .then(
+        (response) => {
+          console.log(
+            "Thank-you email sent successfully!",
+            response.status,
+            response.text
+          );
+        },
+        (err) => {
+          console.log("Failed to send thank-you email...", err);
+        }
+      );
   };
 
   return (
@@ -47,8 +99,13 @@ const ContactForm = () => {
             </Alert>
           )}
 
+          {error && (
+            <Alert variant="danger">
+              Oops! Something went wrong. Please try again later.
+            </Alert>
+          )}
+
           <Form noValidate validated={validated} onSubmit={handleSubmit}>
-            {/* Name Input */}
             <Form.Group controlId="formName">
               <Form.Label>Name</Form.Label>
               <Form.Control
@@ -63,8 +120,6 @@ const ContactForm = () => {
                 Please enter your name.
               </Form.Control.Feedback>
             </Form.Group>
-
-            {/* Email Input */}
             <Form.Group controlId="formEmail" className="mt-3">
               <Form.Label>Email address</Form.Label>
               <Form.Control
@@ -79,8 +134,6 @@ const ContactForm = () => {
                 Please provide a valid email address.
               </Form.Control.Feedback>
             </Form.Group>
-
-            {/* Phone Input */}
             <Form.Group controlId="formPhone" className="mt-3">
               <Form.Label>Phone Number</Form.Label>
               <Form.Control
@@ -96,8 +149,6 @@ const ContactForm = () => {
                 Please provide a valid phone number.
               </Form.Control.Feedback>
             </Form.Group>
-
-            {/* Message Input */}
             <Form.Group controlId="formMessage" className="mt-3">
               <Form.Label>Message</Form.Label>
               <Form.Control
@@ -113,8 +164,6 @@ const ContactForm = () => {
                 Please enter a message.
               </Form.Control.Feedback>
             </Form.Group>
-
-            {/* Submit Button */}
             <Button className="mt-4" variant="primary" type="submit">
               Submit
             </Button>
