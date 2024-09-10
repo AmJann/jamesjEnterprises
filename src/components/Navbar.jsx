@@ -18,25 +18,12 @@ function Navbar() {
     navRef.current.classList.toggle("responsive_nav");
   };
 
+  const handleLinkClick = () => {
+    // Close the menu when a link is clicked
+    navRef.current.classList.remove("responsive_nav");
+  };
+
   return (
-    // <div className="navContainer interFont">
-    //   <div className="navContainer companyName">
-    //     <h2 className="interFont">
-    //       James Jankowski <span className="interFontLight">Enterprises</span>
-    //     </h2>
-    //     <p className="montserratFont">Concrete Specialists</p>
-    //   </div>
-    //   <div className="navContainer">
-    //     <ul id="navList">
-    //       <li className="navOption interFont">about us</li>
-    //       <li className="navOption interFont">articles</li>
-    //       <li className="navOption interFont">pricing</li>
-    //       <li className="navOption interFont" id="lastNavOption">
-    //         contact us
-    //       </li>
-    //     </ul>
-    //   </div>
-    // </div>
     <header className="navHeader">
       <div>
         <h2 className="interFont jje">
@@ -46,16 +33,16 @@ function Navbar() {
         <h3 className="montserratFontLight goldFont">Concrete Specialists</h3>
       </div>
       <nav ref={navRef}>
-        <Link className="link" to="/">
+        <Link className="link" to="/" onClick={handleLinkClick}>
           {<FaHome />} Home
         </Link>
-        <Link className="link" to="/">
+        <Link className="link" to="/gallery" onClick={handleLinkClick}>
           {<FaImage />} Gallery
         </Link>
-        <Link className="link" to="/">
+        <Link className="link" to="/services" onClick={handleLinkClick}>
           {<FaHammer />} Services
         </Link>
-        <Link className="link" to="/">
+        <Link className="link" to="/contact" onClick={handleLinkClick}>
           {<FaEnvelope />} Contact
         </Link>
         <button className="nav-btn nav-close-btn" onClick={showNavBar}>

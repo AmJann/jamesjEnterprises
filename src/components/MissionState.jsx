@@ -20,12 +20,13 @@ function MissionState() {
       <p className="content montserratFontLight">
         At James Jankowski Enterprises, our mission is to deliver the highest
         quality concrete solutions with unparalleled craftsmanship and
-        integrity. With 40 years of experience serving Southwest Florida, we are
-        committed to building lasting relationships with our clients, providing
-        reliable, innovative, and sustainable construction services that stand
-        the test of time. We take pride in our deep roots in the community and
-        our unwavering dedication to excellence, ensuring that every project
-        reflects our legacy of trust, expertise, and exceptional service.
+        integrity. With over 40 years of experience serving Southwest Florida,
+        we are committed to building lasting relationships with our clients,
+        providing reliable, innovative, and sustainable construction services
+        that stand the test of time. We take pride in our deep roots in the
+        community and our unwavering dedication to excellence, ensuring that
+        every project reflects our legacy of trust, expertise, and exceptional
+        service.
       </p>
       {/* <ContactForm /> */}
     </div>

@@ -50,6 +50,8 @@ const Carousel = () => {
   };
 
   useEffect(() => {
+    if (!carouselInnerRef.current) return;
+
     carouselInnerRef.current.style.transition = "transform 0.5s ease-in-out";
     carouselInnerRef.current.style.transform = `translateX(-${
       currentIndex * 100
@@ -88,10 +90,12 @@ const Carousel = () => {
 
     return () => {
       clearTimeout(textUpdateTimeout);
-      carouselInnerRef.current.removeEventListener(
-        "transitionend",
-        handleTransitionEnd
-      );
+      if (carouselInnerRef.current) {
+        carouselInnerRef.current.removeEventListener(
+          "transitionend",
+          handleTransitionEnd
+        );
+      }
     };
   }, [currentIndex, images.length]);
 
