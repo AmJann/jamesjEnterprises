@@ -5,6 +5,7 @@ import Services from "./pages/Services";
 import Footer from "./components/Footer";
 import { React, Fragment } from "react";
 import { Routes, Route } from "react-router-dom";
+import Gallery from "./pages/Gallery";
 // import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<Home />} />
-        <Route path="/gallery" element={<Home />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Home />} />
       </Routes>
       <Footer />
