@@ -1,3 +1,10 @@
+:root {
+  --mainColor: rgb(28, 34, 70);
+  --mainColorLight: rgb(46, 57, 116);
+  --secondaryColor: rgb(158, 157, 157);
+  --textColor: rgb(245, 242, 242);
+}
+
 .servicesContainer {
   position: relative;
   /* border: 3px solid red; */
@@ -22,7 +29,7 @@
   width: 45em;
   left: 70%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: 3;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   /* border: 3px solid black; */
@@ -30,7 +37,7 @@
 
 .servicesHeader {
   position: absolute;
-  top: 30%;
+  top: 21%;
   left: 10%;
   transform: translate(-50%, -50%);
   /* color: #f8d210; */
@@ -39,6 +46,9 @@
   z-index: 3;
   width: 100%;
   text-align: left;
+  margin-bottom: 5em;
+  border-bottom: 3px solid rgb(28, 34, 70);
+  padding-bottom: 8em;
 }
 
 .services {
@@ -53,7 +63,7 @@
   left: 2%;
   margin-top: 5vh; /* Adjust to sit below the images */
   width: 20vw;
-  top: 47%;
+  top: 25%;
   z-index: 1;
 }
 
@@ -63,13 +73,38 @@
   margin: 0 auto;
   color: black;
   /* border: 3px solid purple; */
-  margin-bottom: 5em;
+  margin-bottom: 10em;
+}
+
+.servicesListConatiner {
+  margin-left: 2em;
+  /* margin-top: 8em; */
+}
+
+.servicesCategory {
+  color: var(--mainColorLight);
+}
+
+.servicesItem {
+  list-style: none;
 }
 
 @media only screen and (max-width: 1360px) {
   .concreteHandContainer {
     position: relative;
     width: 35em;
+  }
+
+  .servicesListConatiner {
+    margin-left: 2em;
+    margin-top: 8em;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .servicesListConatiner {
+    margin-left: 2em;
+    margin-top: 12em;
   }
 }
 
@@ -135,6 +170,7 @@
     margin-bottom: 2em;
     z-index: 2;
     background-color: rgb(28, 34, 70);
+    padding-bottom: 0;
   }
 
   .services {
@@ -164,6 +200,12 @@
     color: black;
     /* border: 3px solid purple; */
     margin-bottom: 5em;
+  }
+
+  .servicesListConatiner {
+    margin-left: 2em;
+    margin-top: 0;
+    margin-bottom: 3em;
   }
 }
 

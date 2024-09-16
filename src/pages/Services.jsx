@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/services.css";
 import concrete from "../assets/concreteStock.jpg";
 import concreteHand from "../assets/stockConcreteHand.jpeg";
+import ServicesList from "../components/ServicesList";
 
 function Services() {
   return (
@@ -27,6 +28,7 @@ function Services() {
           and quality services.
         </h4>
       </div>
+      <ServicesList />
     </div>
   );
 }
