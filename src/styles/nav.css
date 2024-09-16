@@ -92,6 +92,16 @@ nav .link:hover {
   font-size: 1.5em;
 }
 
+@media only screen and (max-width: 1095px) {
+  nav .link {
+    font-size: 1.2rem;
+  }
+
+  .jje {
+    font-size: 1.3em;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .navHeader .nav-btn {
     visibility: visible;

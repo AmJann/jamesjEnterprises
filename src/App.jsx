@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
+import Footer from "./components/Footer";
 import { React, Fragment } from "react";
 import { Routes, Route } from "react-router-dom";
 // import "bootstrap/dist/css/bootstrap.min.css";
@@ -17,6 +18,7 @@ function App() {
         <Route path="/gallery" element={<Home />} />
         <Route path="/contact" element={<Home />} />
       </Routes>
+      <Footer />
     </Fragment>
   );
 }

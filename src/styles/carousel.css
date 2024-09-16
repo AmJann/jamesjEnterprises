@@ -34,6 +34,13 @@
   font-style: normal;
 }
 
+.oswaldFont {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .carousel-inner1 {
   display: flex;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
@@ -101,7 +108,7 @@
 
 .carousel-text1 {
   position: absolute;
-  font-size: 3em;
+  font-size: 3.2em;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);

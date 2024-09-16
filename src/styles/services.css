@@ -1,0 +1,193 @@
+.servicesContainer {
+  position: relative;
+  /* border: 3px solid red; */
+  margin-bottom: 10em;
+}
+
+.concrete {
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+  /* border: 3px solid gold; */
+}
+
+.concreteHand {
+  border-radius: 7px;
+}
+
+.concreteHandContainer {
+  position: relative;
+  width: 45em;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  /* border: 3px solid black; */
+}
+
+.servicesHeader {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  /* color: #f8d210; */
+  /* text-shadow: 1px 1px 1px rgb(85, 84, 84); */
+  color: white;
+  z-index: 3;
+  width: 100%;
+  text-align: left;
+}
+
+.services {
+  position: absolute;
+  /* margin-top: 0.4em; */
+  left: 42%;
+  font-size: 6em;
+}
+
+.servicesIntroContainer {
+  position: absolute;
+  left: 2%;
+  margin-top: 5vh; /* Adjust to sit below the images */
+  width: 20vw;
+  top: 47%;
+  z-index: 1;
+}
+
+.servicesIntro {
+  font-size: 1.3em;
+  width: 40vw;
+  margin: 0 auto;
+  color: black;
+  /* border: 3px solid purple; */
+  margin-bottom: 5em;
+}
+
+@media only screen and (max-width: 1360px) {
+  .concreteHandContainer {
+    position: relative;
+    width: 35em;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .servicesContainer {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0;
+  }
+  /* .servicesContainer {
+    position: static;
+    display: block;
+    flex-direction: column;
+    /* border: 3px solid red; */
+  /* margin-bottom: 10em; */
+  /* } */
+
+  .concrete {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+    position: static;
+    z-index: 1;
+    /* border: 3px solid gold; */
+    display: none;
+  }
+
+  .concreteHand {
+    border-radius: 0px;
+  }
+
+  .concreteHandContainer {
+    display: flex;
+    justify-content: center;
+    position: static;
+    width: fit-content;
+    /* left: 0%; */
+    z-index: 1;
+    box-shadow: none;
+    /* border: 3px solid black; */
+    transform: none;
+  }
+
+  .servicesHeader {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    /* left: 40%; */
+    transform: none;
+    /* padding-top: 5em; */
+    color: #f8d210;
+    text-shadow: 0.3px 0.3px 0.3px rgb(85, 84, 84);
+    color: white;
+    z-index: 1;
+    width: 100%;
+    text-align: left;
+    margin-left: 0em;
+    /* background-image: url("../assets/concreteStock.jpg"); */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, */
+    /* rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+    margin-bottom: 2em;
+    z-index: 2;
+    background-color: rgb(28, 34, 70);
+  }
+
+  .services {
+    position: static;
+    /* margin-top: 0.4em; */
+    /* color: black; */
+    left: 0%;
+    font-size: 5em;
+    padding-left: 0.2em;
+  }
+
+  .servicesIntroContainer {
+    position: static;
+    left: 50%;
+    margin-top: 5vh; /* Adjust to sit below the images */
+    width: 100vw;
+    top: 0%;
+    text-align: left;
+    z-index: 1;
+    /* background-color: rgb(248, 210, 16, 0.); */
+  }
+
+  .servicesIntro {
+    font-size: 1.3em;
+    width: 80vw;
+    margin: 0 auto;
+    color: black;
+    /* border: 3px solid purple; */
+    margin-bottom: 5em;
+  }
+}
+
+/* Default styles (for larger screens) remain above */
+
+/* Mobile layout for screens 768px and smaller */
+@media screen and (max-width: 768px) {
+  .servicesHeader {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    font-size: 0.7em;
+  }
+
+  .concreteHandContainer {
+    display: flex;
+    justify-content: center;
+    position: static;
+    width: fit-content;
+    /* left: 0%; */
+    z-index: 1;
+    box-shadow: none;
+    /* border: 3px solid black; */
+    transform: none;
+    height: 30vh;
+  }
+}
