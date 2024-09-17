@@ -26,11 +26,11 @@ function Navbar() {
   return (
     <header className="navHeader">
       <div>
-        <h2 className="interFont jje">
+        <h1 className="interFont jje">
           James Jankowski{" "}
           <span className="interFontExtraLight">Enterprises</span>
-        </h2>
-        <h3 className="montserratFontLight goldFont">Concrete Specialists</h3>
+        </h1>
+        <h1 className="montserratFontLight goldFont">Concrete Specialists</h1>
       </div>
       <nav ref={navRef}>
         <Link className="link" to="/" onClick={handleLinkClick}>

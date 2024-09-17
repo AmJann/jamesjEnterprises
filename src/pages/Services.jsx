@@ -10,9 +10,13 @@ function Services() {
       <div className="servicesHeader">
         <h1 className="montserratFont services">Services</h1>
       </div>
-      <img src={concrete} className="concrete"></img>
+      <img src={concrete} alt="concrete texture" className="concrete"></img>
       <div className="concreteHandContainer">
-        <img src={concreteHand} className="concreteHand"></img>
+        <img
+          src={concreteHand}
+          alt="hand using tool to smooth out concrete"
+          className="concreteHand"
+        ></img>
       </div>
       <div className="servicesIntroContainer">
         <h4 className="montserratFontLight servicesIntro">

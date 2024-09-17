@@ -15,7 +15,10 @@ function MissionState() {
         </div>
 
         <div className="floridaImageContainer">
-          <img src={yellowFlorida} alt="outline of the state of Florida"></img>
+          <img
+            src={yellowFlorida}
+            alt="outline of the state of Florida with yellow color"
+          ></img>
         </div>
       </div>
       <p className="content montserratFontLight">

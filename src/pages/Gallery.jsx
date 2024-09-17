@@ -9,7 +9,7 @@ function Gallery() {
       <div className="galleryHeader">
         <h1 className="montserratFont gallery">Gallery</h1>
       </div>
-      <img src={concrete} className="concrete"></img>
+      <img src={concrete} alt="concrete texture" className="concrete"></img>
       <div className="concreteHandContainer">
         <img src={concreteHand} className="concreteHand"></img>
       </div>

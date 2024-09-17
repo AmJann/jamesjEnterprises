@@ -28,6 +28,11 @@ const Carousel = () => {
     jamesDriveway,
   ];
 
+  const alts = [
+    "sunset of charlotte harbor and pier",
+    "concrete driveway in front of house",
+  ];
+
   const messages = [
     "Charlotte County's Concrete Professionals since 1983",
     "Contact Us Today at",
@@ -104,7 +109,11 @@ const Carousel = () => {
       <div className="carousel-inner1" ref={carouselInnerRef}>
         {images.map((image, index) => (
           <div key={index} className="carousel-item1">
-            <img className="slideImage1" src={image} alt={`Slide ${index}`} />
+            <img
+              className="slideImage1"
+              src={image}
+              alt={currentIndex % 2 ? alts[0] : alts[1]}
+            />
             <div className="textContainer ">
               <h2 className="interFont carousel-text1">{currentMessage}</h2>
               <a href="tel:+19412043066" className="descriptionText1">

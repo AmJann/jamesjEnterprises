@@ -1,0 +1,13 @@
+# Allow all crawlers access to the entire website
+User-agent: *
+Disallow:
+
+# Block crawlers from accessing admin or private directories
+Disallow: /admin/
+Disallow: /private/
+
+# Block access to specific file types
+Disallow: /*.pdf$
+
+# Sitemap location
+Sitemap: https://www.yourwebsite.com/sitemap.xml
