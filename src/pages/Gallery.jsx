@@ -1,7 +1,7 @@
 import React from "react";
 import concrete from "../assets/concreteStock.jpg";
-import concreteHand from "../assets/stockConcreteHand.jpeg";
 import "../styles/gallery.css";
+import concretePour from "../assets/concretePour.jpeg";
 
 function Gallery() {
   return (
@@ -11,7 +11,7 @@ function Gallery() {
       </div>
       <img src={concrete} alt="concrete texture" className="concrete"></img>
       <div className="concreteHandContainer">
-        <img src={concreteHand} className="concreteHand"></img>
+        <img src={concretePour} className="concreteHand"></img>
       </div>
       <div className="galleryIntroContainer">
         <h4 className="montserratFontLight galleryIntro">

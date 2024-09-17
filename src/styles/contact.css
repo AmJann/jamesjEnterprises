@@ -1,0 +1,247 @@
+:root {
+  --mainColor: rgb(28, 34, 70);
+  --mainColorLight: rgb(46, 57, 116);
+  --secondaryColor: rgb(158, 157, 157);
+  --textColor: rgb(245, 242, 242);
+}
+
+.goldFontContact {
+  color: #f8d210;
+  font-size: 2em;
+}
+.contactContainer {
+  position: relative;
+  /* border: 3px solid red; */
+  margin-bottom: 10em;
+}
+
+.concrete {
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+  /* border: 3px solid gold; */
+}
+
+.concreteHand {
+  border-radius: 7px;
+}
+
+.concreteHandContainer {
+  position: relative;
+  width: 45em;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  /* border: 3px solid black; */
+}
+
+.contactHeader {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  /* color: #f8d210; */
+  /* text-shadow: 1px 1px 1px rgb(85, 84, 84); */
+  color: white;
+  z-index: 3;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 5em;
+  border-bottom: 3px solid rgb(28, 34, 70);
+  padding-bottom: 8em;
+}
+
+.contact {
+  position: absolute;
+  /* margin-top: 0.4em; */
+  left: 42%;
+  font-size: 6em;
+}
+
+.contactIntroContainer {
+  position: absolute;
+  left: 2%;
+  margin-top: 5vh; /* Adjust to sit below the images */
+  width: 20vw;
+  top: 25%;
+  z-index: 1;
+  padding-top: 2em;
+}
+
+.contactIntro {
+  font-size: 1.3em;
+  width: 40vw;
+  margin: 0 auto;
+  color: black;
+  /* border: 3px solid purple; */
+  margin-bottom: 10em;
+}
+
+.contactFormConatiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  right: 5%;
+  color: black;
+  margin-left: 0%;
+  padding: 0;
+  width: 100%;
+}
+
+.callUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid var(--mainColor);
+  background-color: var(--mainColor);
+  color: white;
+  padding: 1em;
+  border-radius: 25px;
+  margin-bottom: 15em;
+  margin-top: 5em;
+  /* margin-left: 2em; */
+}
+
+@media only screen and (max-width: 1360px) {
+  .concreteHandContainer {
+    position: relative;
+    width: 35em;
+  }
+
+  /* .galleryIntroContainer {
+    padding-top: 2em;
+  } */
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1024px) {
+  .contactFormConatiner {
+    position: static;
+    flex-direction: column;
+    position: none;
+  }
+
+  .callUs {
+  }
+
+  .contactContainer {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  /* .servicesContainer {
+      position: static;
+      display: block;
+      flex-direction: column;
+      /* border: 3px solid red; */
+  /* margin-bottom: 10em; */
+  /* } */
+
+  .concrete {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+    position: static;
+    z-index: 1;
+    /* border: 3px solid gold; */
+    display: none;
+  }
+
+  .concreteHand {
+    border-radius: 0px;
+  }
+
+  .concreteHandContainer {
+    display: flex;
+    justify-content: center;
+    position: static;
+    width: fit-content;
+    /* left: 0%; */
+    z-index: 1;
+    box-shadow: none;
+    /* border: 3px solid black; */
+    transform: none;
+  }
+
+  .contactHeader {
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    margin-left: 15%;
+    transform: none;
+    color: #f8d210;
+    text-shadow: 0.3px 0.3px 0.3px rgb(85, 84, 84);
+    color: white;
+    z-index: 1;
+    width: 85%;
+    text-align: left;
+    margin-bottom: 2em;
+    z-index: 2;
+    background-color: rgb(28, 34, 70);
+    padding-bottom: 0;
+    max-width: 100%;
+  }
+
+  .contact {
+    position: static;
+    /* margin-top: 0.4em; */
+    /* color: black; */
+    left: 0%;
+    font-size: 5em;
+    padding-left: 0.2em;
+  }
+
+  .contactIntroContainer {
+    position: static;
+    left: 50%;
+    margin-top: 5vh; /* Adjust to sit below the images */
+    width: 100vw;
+    top: 0%;
+    text-align: left;
+    z-index: 1;
+    /* background-color: rgb(248, 210, 16, 0.); */
+  }
+
+  .contactIntro {
+    font-size: 1.3em;
+    width: 80vw;
+    margin: 0 auto;
+    color: black;
+    /* border: 3px solid purple; */
+    margin-bottom: 5em;
+  }
+}
+
+/* Default styles (for larger screens) remain above */
+
+/* Mobile layout for screens 768px and smaller */
+@media screen and (max-width: 768px) {
+  .contactHeader {
+    position: absolute;
+    top: 35%;
+    font-size: 0.7em;
+  }
+
+  .concreteHandContainer {
+    display: flex;
+    justify-content: center;
+    position: static;
+    width: fit-content;
+    /* left: 0%; */
+    z-index: 1;
+    box-shadow: none;
+    /* border: 3px solid black; */
+    transform: none;
+    height: 30vh;
+  }
+}

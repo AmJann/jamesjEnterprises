@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import { React, Fragment } from "react";
 import { Routes, Route } from "react-router-dom";
 import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
 // import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<Home />} />
         <Route path="/gallery" element={<Gallery />} />
-        <Route path="/contact" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Fragment>

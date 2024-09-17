@@ -2,7 +2,7 @@
   /* margin: 0 !important;
   padding: 0 !important; */
   /* border-left: 2px solid #f8d210; */
-  width: 30vw;
+  width: 30em;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -42,12 +42,18 @@
 
 @media only screen and (max-width: 1024px) {
   .my-5 {
-    width: 80vw;
+    width: 30em;
     /* border-top: 2px solid #f8d210; */
     border-left: none;
     padding: 2rem 1rem;
-    margin-left: 2rem;
+    margin-left: 10vw;
     margin-right: 1rem;
     background-color: rgba(245, 244, 241, 0.979);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .my-5 {
+    width: 20em;
   }
 }

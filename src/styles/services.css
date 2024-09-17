@@ -153,24 +153,20 @@
   .servicesHeader {
     position: absolute;
     top: 50%;
-    left: 15%;
-    /* left: 40%; */
+    left: 0%;
+    margin-left: 15%;
     transform: none;
-    /* padding-top: 5em; */
     color: #f8d210;
     text-shadow: 0.3px 0.3px 0.3px rgb(85, 84, 84);
     color: white;
     z-index: 1;
-    width: 100%;
+    width: 85%;
     text-align: left;
-    margin-left: 0em;
-    /* background-image: url("../assets/concreteStock.jpg"); */
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, */
-    /* rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
     margin-bottom: 2em;
     z-index: 2;
     background-color: rgb(28, 34, 70);
     padding-bottom: 0;
+    max-width: 100%;
   }
 
   .services {
@@ -185,7 +181,7 @@
   .servicesIntroContainer {
     position: static;
     left: 50%;
-    margin-top: 5vh; /* Adjust to sit below the images */
+    margin-top: 7vh; /* Adjust to sit below the images */
     width: 100vw;
     top: 0%;
     text-align: left;
@@ -216,7 +212,6 @@
   .servicesHeader {
     position: absolute;
     top: 35%;
-    left: 10%;
     font-size: 0.7em;
   }
 
