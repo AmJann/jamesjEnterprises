@@ -17,7 +17,6 @@
   object-fit: cover;
   position: relative;
   z-index: 1;
-  /* border: 3px solid gold; */
 }
 
 .concreteHand {

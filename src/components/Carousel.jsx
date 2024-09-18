@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "../styles/carousel.css";
 import charlotteHarbor from "../assets/charlotteHarbor.jpg";
 import jamesDriveway from "../assets/jamesDrivewayResize.jpeg";
+import { FaPhoneAlt } from "react-icons/fa";
 
 const Carousel = () => {
   const images = [
@@ -117,15 +118,16 @@ const Carousel = () => {
             />
             <div className="textContainer ">
               <h2 className="interFont carousel-text1">{currentMessage}</h2>
+
               <a href="tel:+19412043066" className="descriptionText1">
+                {/* {currentDescription !== "" ? <FaPhoneAlt /> : ""}{" "} */}
                 {currentDescription}
               </a>
               <div className="descriptionText2Container">
-                <h3 className="descriptionText2 goldFont interFont">
+                <h3 className="descriptionText2 interFont FreeDescription">
                   Free Estimates
                 </h3>
-                <h3 className="descriptionText2 goldFont interFont">
-                  {" "}
+                <h3 className="descriptionText2 interFont licensedDescription">
                   Licensed and Insured
                 </h3>
               </div>
