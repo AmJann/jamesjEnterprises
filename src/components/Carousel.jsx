@@ -44,6 +44,7 @@ const Carousel = () => {
   const [currentDescription, setCurrentDescription] = useState(
     descriptiveText[0]
   );
+
   const carouselInnerRef = useRef(null);
 
   const goToPrevious = () => {
@@ -119,6 +120,15 @@ const Carousel = () => {
               <a href="tel:+19412043066" className="descriptionText1">
                 {currentDescription}
               </a>
+              <div className="descriptionText2Container">
+                <h3 className="descriptionText2 goldFont interFont">
+                  Free Estimates
+                </h3>
+                <h3 className="descriptionText2 goldFont interFont">
+                  {" "}
+                  Licensed and Insured
+                </h3>
+              </div>
             </div>
           </div>
         ))}

@@ -42,6 +42,7 @@
   color: white;
   font-weight: 200;
   padding: 1em 0;
+  height: 20vh;
 }
 .contactContainer {
   color: white;
@@ -53,7 +54,7 @@
 
 .footerCategory {
   color: #f8d210;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: center;
 }
 
@@ -79,6 +80,7 @@
 @media only screen and (max-width: 1024px) {
   .footerContainer {
     flex-direction: column;
+    height: 30vh;
   }
 
   .contactContainer {
@@ -96,7 +98,7 @@
   }
 
   .footerItem {
-    font-size: 0.95em;
+    font-size: 0.9em;
   }
 
   .footerCategory {

@@ -1,5 +1,4 @@
 import React from "react";
-import Florida from "../assets/florida-no-bg.png";
 import "../styles/main.css";
 import yellowFlorida from "../assets/yellow-fl-no-bg.png";
 
@@ -32,7 +31,6 @@ function MissionState() {
         every project reflects our legacy of trust, expertise, and exceptional
         service.
       </p>
-      {/* <ContactForm /> */}
     </div>
   );
 }
