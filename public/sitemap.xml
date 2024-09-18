@@ -1,4 +1,4 @@
-<urlset xmlns="https://jamesjankowskienterprises.com/sitemap.xml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jamesjankowskienterprises.com/</loc>
     <lastmod>2024-09-17</lastmod>
@@ -7,7 +7,6 @@
     <loc>https://jamesjankowskienterprises.com/services</loc>
     <lastmod>2024-09-17</lastmod>
   </url>
-    </url>
   <url>
     <loc>https://jamesjankowskienterprises.com/gallery</loc>
     <lastmod>2024-09-17</lastmod>
@@ -16,5 +15,4 @@
     <loc>https://jamesjankowskienterprises.com/contact</loc>
     <lastmod>2024-09-17</lastmod>
   </url>
-  
 </urlset>
