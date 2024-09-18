@@ -37,7 +37,7 @@
 
 .servicesHeader {
   position: absolute;
-  top: 21%;
+  top: 17%;
   left: 10%;
   transform: translate(-50%, -50%);
   /* color: #f8d210; */
@@ -63,7 +63,7 @@
   left: 2%;
   margin-top: 5vh; /* Adjust to sit below the images */
   width: 20vw;
-  top: 25%;
+  top: 20%;
   z-index: 1;
 }
 
@@ -73,20 +73,71 @@
   margin: 0 auto;
   color: black;
   /* border: 3px solid purple; */
-  margin-bottom: 10em;
+  margin-bottom: 5em;
 }
 
 .servicesListConatiner {
   margin-left: 2em;
+  margin-top: 7em;
   /* margin-top: 8em; */
 }
 
 .servicesCategory {
   color: var(--mainColorLight);
+  font-size: 2em;
 }
 
 .servicesItem {
   list-style: none;
+  font-size: 1.2em;
+}
+
+.allServicesContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 15em 0 2em;
+}
+
+.imagesServicesContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5em;
+}
+
+.imagesServicesSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.imageItem {
+  position: relative;
+  width: 20em;
+  height: 16em;
+  margin: 2em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.imageService {
+  width: 100%; /* Adjust to fit container */
+  height: 100%; /* Adjust to fit container */
+  object-fit: cover;
+}
+
+.overlayService {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Adjust color and opacity */
+  color: white; /* Text color for any overlay text */
+  z-index: 1; /* Ensure the overlay is above the image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* Ensure the overlay does not block interactions with the image */
+  font-size: 1.5em;
 }
 
 @media only screen and (max-width: 1360px) {
@@ -108,7 +159,17 @@
   }
 }
 
+@media only screen and (max-width: 1187px) {
+  .imagesServicesContainer {
+    margin-top: 13em;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
+  .allServicesContainer {
+    flex-direction: column;
+    margin-left: 1em;
+  }
   .servicesContainer {
     position: static;
     display: flex;
@@ -203,16 +264,34 @@
     margin-top: 0;
     margin-bottom: 3em;
   }
+
+  .imagesServicesContainer {
+    margin-top: 3em;
+  }
 }
 
 /* Default styles (for larger screens) remain above */
 
 /* Mobile layout for screens 768px and smaller */
 @media screen and (max-width: 768px) {
+  .imagesServicesContainer {
+    flex-direction: column;
+  }
+
+  .servicesCategory {
+    font-size: 1.6em;
+  }
+
   .servicesHeader {
     position: absolute;
     top: 35%;
     font-size: 0.7em;
+  }
+
+  .allServicesContainer {
+    /* border: 1px solid red; */
+    width: 90%;
+    margin-bottom: 5em;
   }
 
   .concreteHandContainer {
