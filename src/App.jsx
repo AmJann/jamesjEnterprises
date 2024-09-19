@@ -7,6 +7,7 @@ import { React, Fragment, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
+import { HelmetProvider } from "react-helmet-async";
 
 function App() {
   useEffect(() => {
@@ -26,17 +27,19 @@ function App() {
   }, []);
 
   return (
-    <Fragment>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/about" element={<Home />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
-    </Fragment>
+    <HelmetProvider>
+      <Fragment>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/about" element={<Home />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </Fragment>
+    </HelmetProvider>
   );
 }
 

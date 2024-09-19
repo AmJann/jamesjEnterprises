@@ -4,10 +4,22 @@ import "../styles/contact.css";
 import phone from "../assets/phone.jpeg";
 import ContactForm from "../components/ContactForm";
 import Phone from "../components/Phone";
+import { Helmet } from "react-helmet-async";
 
 function Contact() {
   return (
     <div className="contactContainer">
+      <Helmet>
+        <link
+          rel="canonical"
+          href="https://jamesjankowskienterprises.com/contact"
+        />
+        <title>Contact Us | James Jankowski Enterprises</title>
+        <meta
+          name="description"
+          content="Get in touch with James Jankowski Enterprises for expert concrete services in Port Charlotte, FL. Call us today for a free estimate or use our contact form to send a message."
+        />
+      </Helmet>
       <div className="contactHeader">
         <h1 className="montserratFont contact">Contact</h1>
       </div>

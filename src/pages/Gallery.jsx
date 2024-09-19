@@ -2,10 +2,23 @@ import React from "react";
 import concrete from "../assets/concreteStock.jpg";
 import "../styles/gallery.css";
 import concretePour from "../assets/concretePour.jpeg";
+import { Helmet } from "react-helmet-async";
 
 function Gallery() {
   return (
     <div className="galleryContainer">
+      <Helmet>
+        <link
+          rel="canonical"
+          href="https://jamesjankowskienterprises.com/gallery"
+        />
+        <title>Gallery | James Jankowski Enterprises</title>
+        <meta
+          name="description"
+          content="Browse our gallery to see the exceptional concrete work by James Jankowski Enterprises. View projects including driveways, patios, and decorative concrete in Port Charlotte and surrounding areas."
+        />
+      </Helmet>
+
       <div className="galleryHeader">
         <h1 className="montserratFont gallery">Gallery</h1>
       </div>

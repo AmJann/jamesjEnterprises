@@ -3,10 +3,24 @@ import "../styles/services.css";
 import concrete from "../assets/concreteStock.jpg";
 import concreteHand from "../assets/stockConcreteHand.jpeg";
 import ServicesList from "../components/ServicesList";
+import { Helmet } from "react-helmet-async";
 
 function Services() {
   return (
     <div className="servicesContainer">
+      <Helmet>
+        <link
+          rel="canonical"
+          href="https://jamesjankowskienterprises.com/services"
+        />
+        <title>
+          Concrete Services in Port Charlotte, FL | James Jankowski Enterprises
+        </title>
+        <meta
+          name="description"
+          content="Explore our concrete services including driveways, patios, and more in Port Charlotte, FL."
+        />
+      </Helmet>
       <div className="servicesHeader">
         <h1 className="montserratFont services">Services</h1>
       </div>
