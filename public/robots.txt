@@ -7,7 +7,7 @@ Disallow: /admin/
 Disallow: /private/
 
 # Block access to specific file types
-Disallow: /*.pdf$
+Disallow: 
 
 # Sitemap location
-Sitemap: https://www.yourwebsite.com/sitemap.xml
+Sitemap: https://jamesjankowskienterprises.com/sitemap.xml
