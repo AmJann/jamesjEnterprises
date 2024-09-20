@@ -51,12 +51,12 @@
   min-width: 100%;
   position: relative;
   overflow: hidden;
-  opacity: 0; /* Start with fully transparent */
-  transition: opacity 0.5s ease-in-out; /* Add transition for opacity */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .carousel-item1.active {
-  opacity: 1; /* Fully opaque when active */
+  opacity: 1;
 }
 
 .carousel-item1 img {
@@ -193,6 +193,16 @@
 }
 
 @media screen and (max-width: 768px) {
+  .carousel-text1 {
+    font-size: 1.7rem;
+    width: 80%;
+    text-align: center;
+  }
+
+  .descriptionText1 {
+    font-size: 1.4rem;
+  }
+
   .descriptionText2 {
     font-size: 1.6rem;
   }

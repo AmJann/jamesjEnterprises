@@ -30,21 +30,19 @@ const ContactForm = () => {
       e.stopPropagation();
     } else {
       e.preventDefault();
-      sendEmail(); // Send contact form email
+      sendEmail();
     }
 
     setValidated(true);
   };
 
-  // Function to send the contact form email
   const sendEmail = () => {
-    // Send contact form details to you
     emailjs
       .send(
-        import.meta.env.VITE_SERVICE_ID, // Replace with your EmailJS Service ID
-        import.meta.env.VITE_TEMPLATE_ID, // Replace with your EmailJS contact form Template ID
-        formData, // Data from the form
-        import.meta.env.VITE_USER_ID // Replace with your EmailJS User ID
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        formData,
+        import.meta.env.VITE_USER_ID
       )
       .then(
         (response) => {

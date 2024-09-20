@@ -40,7 +40,7 @@ const Carousel = () => {
   ];
   const descriptiveText = ["", "941-204-3066"];
 
-  const [currentIndex, setCurrentIndex] = useState(1); // Start at the first real slide
+  const [currentIndex, setCurrentIndex] = useState(1);
   const [currentMessage, setCurrentMessage] = useState(messages[0]);
   const [currentDescription, setCurrentDescription] = useState(
     descriptiveText[0]
@@ -87,7 +87,6 @@ const Carousel = () => {
       handleTransitionEnd
     );
 
-    // Delay the text update by 0.5s (500ms) to match the transition duration
     const textUpdateTimeout = setTimeout(() => {
       setCurrentMessage(currentIndex % 2 ? messages[0] : messages[1]);
       setCurrentDescription(
@@ -125,7 +124,6 @@ const Carousel = () => {
                     href="tel:+19412043066"
                     className="phoneNumber"
                   >
-                    {/* {currentDescription !== "" ? <FaPhoneAlt /> : ""}{" "} */}
                     {currentDescription}
                   </a>
                 </h2>

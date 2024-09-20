@@ -7,7 +7,6 @@
 
 .servicesContainer {
   position: relative;
-  /* border: 3px solid red; */
   margin-bottom: 10em;
 }
 
@@ -17,7 +16,6 @@
   object-fit: cover;
   position: relative;
   z-index: 1;
-  /* border: 3px solid gold; */
 }
 
 .concreteHand {
@@ -32,7 +30,6 @@
   z-index: 3;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  /* border: 3px solid black; */
 }
 
 .servicesHeader {
@@ -40,8 +37,6 @@
   top: 17%;
   left: 10%;
   transform: translate(-50%, -50%);
-  /* color: #f8d210; */
-  /* text-shadow: 1px 1px 1px rgb(85, 84, 84); */
   color: white;
   z-index: 3;
   width: 100%;
@@ -53,7 +48,6 @@
 
 .services {
   position: absolute;
-  /* margin-top: 0.4em; */
   left: 42%;
   font-size: 6em;
 }
@@ -61,7 +55,7 @@
 .servicesIntroContainer {
   position: absolute;
   left: 2%;
-  margin-top: 5vh; /* Adjust to sit below the images */
+  margin-top: 5vh;
   width: 20vw;
   top: 20%;
   z-index: 1;
@@ -72,14 +66,12 @@
   width: 40vw;
   margin: 0 auto;
   color: black;
-  /* border: 3px solid purple; */
   margin-bottom: 5em;
 }
 
 .servicesListConatiner {
   margin-left: 2em;
   margin-top: 7em;
-  /* margin-top: 8em; */
 }
 
 .servicesCategory {
@@ -119,8 +111,8 @@
 }
 
 .imageService {
-  width: 100%; /* Adjust to fit container */
-  height: 100%; /* Adjust to fit container */
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -130,13 +122,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2); /* Adjust color and opacity */
-  color: white; /* Text color for any overlay text */
-  z-index: 1; /* Ensure the overlay is above the image */
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  pointer-events: none; /* Ensure the overlay does not block interactions with the image */
+  pointer-events: none;
   font-size: 1.5em;
 }
 
@@ -177,13 +169,6 @@
     margin: auto;
     padding: 0;
   }
-  /* .servicesContainer {
-    position: static;
-    display: block;
-    flex-direction: column;
-    /* border: 3px solid red; */
-  /* margin-bottom: 10em; */
-  /* } */
 
   .concrete {
     width: 100%;
@@ -191,7 +176,6 @@
     object-fit: cover;
     position: static;
     z-index: 1;
-    /* border: 3px solid gold; */
     display: none;
   }
 
@@ -204,10 +188,8 @@
     justify-content: center;
     position: static;
     width: fit-content;
-    /* left: 0%; */
     z-index: 1;
     box-shadow: none;
-    /* border: 3px solid black; */
     transform: none;
   }
 
@@ -232,8 +214,6 @@
 
   .services {
     position: static;
-    /* margin-top: 0.4em; */
-    /* color: black; */
     left: 0%;
     font-size: 5em;
     padding-left: 0.2em;
@@ -242,12 +222,11 @@
   .servicesIntroContainer {
     position: static;
     left: 50%;
-    margin-top: 7vh; /* Adjust to sit below the images */
+    margin-top: 7vh;
     width: 100vw;
     top: 0%;
     text-align: left;
     z-index: 1;
-    /* background-color: rgb(248, 210, 16, 0.); */
   }
 
   .servicesIntro {
@@ -255,7 +234,6 @@
     width: 80vw;
     margin: 0 auto;
     color: black;
-    /* border: 3px solid purple; */
     margin-bottom: 5em;
   }
 
@@ -270,9 +248,6 @@
   }
 }
 
-/* Default styles (for larger screens) remain above */
-
-/* Mobile layout for screens 768px and smaller */
 @media screen and (max-width: 768px) {
   .imagesServicesContainer {
     flex-direction: column;
@@ -289,7 +264,6 @@
   }
 
   .allServicesContainer {
-    /* border: 1px solid red; */
     width: 90%;
     margin-bottom: 5em;
   }
@@ -299,10 +273,8 @@
     justify-content: center;
     position: static;
     width: fit-content;
-    /* left: 0%; */
     z-index: 1;
     box-shadow: none;
-    /* border: 3px solid black; */
     transform: none;
     height: 30vh;
   }

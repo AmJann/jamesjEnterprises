@@ -1,7 +1,4 @@
 .my-5 {
-  /* margin: 0 !important;
-  padding: 0 !important; */
-  /* border-left: 2px solid #f8d210; */
   width: 30em;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -43,7 +40,6 @@
 @media only screen and (max-width: 1024px) {
   .my-5 {
     width: 30em;
-    /* border-top: 2px solid #f8d210; */
     border-left: none;
     padding: 2rem 1rem;
     background-color: rgba(245, 244, 241, 0.979);

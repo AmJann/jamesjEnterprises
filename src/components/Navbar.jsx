@@ -19,7 +19,6 @@ function Navbar() {
   };
 
   const handleLinkClick = () => {
-    // Close the menu when a link is clicked
     navRef.current.classList.remove("responsive_nav");
   };
 

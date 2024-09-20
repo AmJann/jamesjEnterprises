@@ -42,15 +42,15 @@
   padding: 0 2rem;
   background-color: var(--mainColor);
   color: var(--textColor);
-  position: fixed; /* Make the header fixed */
-  top: 0; /* Position it at the top */
-  left: 0; /* Ensure it stretches across the screen */
-  width: 100%; /* Full width */
-  z-index: 1000; /* Keep it above other elements */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 body {
-  padding-top: 80px; /* Adjust based on header height */
+  padding-top: 80px;
 }
 
 nav .link {
@@ -144,6 +144,7 @@ nav .link:hover {
   .menu {
     visibility: visible;
     opacity: 1;
+    font-size: 1rem;
   }
 
   .navHeader {
@@ -151,9 +152,9 @@ nav .link:hover {
   }
 
   .jje {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
   .goldFont {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
