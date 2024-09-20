@@ -33,16 +33,36 @@ function Navbar() {
         <h1 className="montserratFontLight goldFont">Concrete Specialists</h1>
       </div>
       <nav ref={navRef}>
-        <Link className="link" to="/" onClick={handleLinkClick}>
+        <Link
+          aria-label="Home"
+          className="link"
+          to="/"
+          onClick={handleLinkClick}
+        >
           {<FaHome />} Home
         </Link>
-        <Link className="link" to="/gallery" onClick={handleLinkClick}>
+        <Link
+          aria-label="Gallery"
+          className="link"
+          to="/gallery"
+          onClick={handleLinkClick}
+        >
           {<FaImage />} Gallery
         </Link>
-        <Link className="link" to="/services" onClick={handleLinkClick}>
+        <Link
+          aria-label="Services"
+          className="link"
+          to="/services"
+          onClick={handleLinkClick}
+        >
           {<FaHammer />} Services
         </Link>
-        <Link className="link" to="/contact" onClick={handleLinkClick}>
+        <Link
+          aria-label="Contact"
+          className="link"
+          to="/contact"
+          onClick={handleLinkClick}
+        >
           {<FaEnvelope />} Contact
         </Link>
         <button className="nav-btn nav-close-btn" onClick={showNavBar}>
@@ -50,10 +70,10 @@ function Navbar() {
         </button>
       </nav>
       <div>
-        <button className="nav-btn" onClick={showNavBar}>
+        <button aria-label="menu" className="nav-btn" onClick={showNavBar}>
           <FaBars />
         </button>
-        <h6 className="interFontExtraLight menu">menu</h6>
+        <h2 className="interFontExtraLight menu">menu</h2>
       </div>
     </header>
   );

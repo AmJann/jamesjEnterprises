@@ -164,7 +164,12 @@ const ContactForm = () => {
                 Please enter a message.
               </Form.Control.Feedback>
             </Form.Group>
-            <Button className="mt-4" variant="primary" type="submit">
+            <Button
+              aria-label="Submit"
+              className="mt-4"
+              variant="primary"
+              type="submit"
+            >
               Submit
             </Button>
           </Form>

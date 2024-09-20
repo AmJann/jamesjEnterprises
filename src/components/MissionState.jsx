@@ -8,9 +8,9 @@ function MissionState() {
       <div className="missionContainer">
         <div>
           <h2 className="montserratFont blueFont header">Trusted and Local</h2>
-          <h6 className="montserratFont subheader">
+          <h3 className="montserratFont subheader">
             40+ years of experience in the area
-          </h6>
+          </h3>
         </div>
 
         <div className="floridaImageContainer">

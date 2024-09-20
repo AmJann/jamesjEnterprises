@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../styles/carousel.css";
 import charlotteHarbor from "../assets/charlotteHarbor.jpg";
-import jamesDriveway from "../assets/jamesDrivewayResize.jpeg";
+import jamesDriveway from "../assets/jamesDrivewayResize1550.jpg";
 import { FaPhoneAlt } from "react-icons/fa";
 
 const Carousel = () => {
@@ -120,7 +120,11 @@ const Carousel = () => {
               <header>
                 <h1 className="interFont carousel-text1">{currentMessage}</h1>
                 <h2 className="descriptionText1">
-                  <a href="tel:+19412043066" className="phoneNumber">
+                  <a
+                    aria-label="phone number"
+                    href="tel:+19412043066"
+                    className="phoneNumber"
+                  >
                     {/* {currentDescription !== "" ? <FaPhoneAlt /> : ""}{" "} */}
                     {currentDescription}
                   </a>
