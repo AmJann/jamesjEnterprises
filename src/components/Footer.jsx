@@ -5,54 +5,54 @@ import FreeEstimates from "./FreeEstimates";
 
 function Footer() {
   return (
-    <div>
+    <footer>
       <div className="footerContainer montserratFont">
         <div className="contactContainer">
-          <h4 className="montserratFont footerCategory">
+          <h1 className="montserratFont footerCategory">
             James Jankowski Enterprises
-          </h4>
-          <h5 className="footerItem">
+          </h1>
+          <h2 className="footerItem">
             <a
               href="tel:+19412043066"
               className="montserratFont footerItem phoneNumber"
             >
               {<FaPhoneAlt alt="phone" />} 941-204-3066
             </a>
-          </h5>
-          <h5 className="footerItem goldFont">Hours:</h5>
-          <h5 className="footerItem">Weekdays 9am - 4pm</h5>
+          </h2>
+          <h1 className="footerItem goldFont">Hours:</h1>
+          <h2 className="footerItem">Weekdays 9am - 4pm</h2>
         </div>
         <div>
-          <h3 className="footerCategory"> Serving</h3>
+          <h1 className="footerCategory"> Serving</h1>
           <div className="serviceAreaContainer">
             <div>
-              <h4 className="footerItem">
+              <h2 className="footerItem">
                 {<FaLocationArrow alt="arrow" />} Port Charlotte, FL
-              </h4>
-              <h4 className="footerItem">
+              </h2>
+              <h2 className="footerItem">
                 {<FaLocationArrow alt="arrow" />} Punta Gorda, FL
-              </h4>
-              <h4 className="footerItem">
+              </h2>
+              <h2 className="footerItem">
                 {" "}
                 {<FaLocationArrow alt="arrow" />} Englewood, FL
-              </h4>
+              </h2>
             </div>
             <div>
-              <h4 className="footerItem">
+              <h2 className="footerItem">
                 {<FaLocationArrow alt="arrow" />} North Port, FL
-              </h4>
-              <h4 className="footerItem">
+              </h2>
+              <h2 className="footerItem">
                 {<FaLocationArrow alt="arrow" />} Venice, FL
-              </h4>
-              <h4 className="footerItem">
+              </h2>
+              <h2 className="footerItem">
                 {<FaLocationArrow alt="arrow" />} Arcadia, FL
-              </h4>
+              </h2>
             </div>
           </div>
         </div>
       </div>
       <FreeEstimates />
-    </div>
+    </footer>
   );
 }
 
