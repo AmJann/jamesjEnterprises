@@ -135,6 +135,10 @@
   /* color: #f8d210; */
 }
 
+.phoneNumber {
+  text-decoration: none;
+}
+
 .descriptionText1:hover {
   font-size: 2.6em;
   color: #f8d210;
