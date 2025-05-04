@@ -52,34 +52,17 @@ const ContactForm = () => {
             response.text
           );
           setSubmitted(true);
-          sendThankYouEmail(); // Send the thank-you email after successful form submission
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            message: "",
+          });
+          setError(false);
         },
         (err) => {
           console.log("Failed to send contact form email...", err);
           setError(true);
-        }
-      );
-  };
-
-  // Function to send the thank-you email
-  const sendThankYouEmail = () => {
-    emailjs
-      .send(
-        import.meta.env.VITE_SERVICE_ID, // Replace with your EmailJS Service ID (can be the same)
-        import.meta.env.VITE_THANKYOU_TEMPLATE_ID, // Replace with your EmailJS Thank-You Template ID
-        formData, // Data from the form
-        import.meta.env.VITE_USER_ID // Replace with your EmailJS User ID
-      )
-      .then(
-        (response) => {
-          console.log(
-            "Thank-you email sent successfully!",
-            response.status,
-            response.text
-          );
-        },
-        (err) => {
-          console.log("Failed to send thank-you email...", err);
         }
       );
   };
