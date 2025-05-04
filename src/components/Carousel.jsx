@@ -38,7 +38,7 @@ const Carousel = () => {
     "Charlotte County's Concrete Professionals since 1983",
     "Contact Us Today at",
   ];
-  const descriptiveText = ["", "941-204-3066"];
+  const descriptiveText = ["", "941-258-5134"];
 
   const [currentIndex, setCurrentIndex] = useState(1);
   const [currentMessage, setCurrentMessage] = useState(messages[0]);
