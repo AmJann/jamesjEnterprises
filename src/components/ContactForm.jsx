@@ -164,7 +164,8 @@ const ContactForm = () => {
             </Form.Group>
             <Button
               aria-label="Submit"
-              className="mt-4"
+              className="mt-4 submitButton"
+              style={{ display: "flex", justifySelf: "center" }}
               variant="primary"
               type="submit"
             >

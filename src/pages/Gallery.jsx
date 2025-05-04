@@ -1,7 +1,7 @@
 import React from "react";
 import concrete from "../assets/concreteStock.jpg";
 import "../styles/gallery.css";
-import concretePour from "../assets/concretePour.jpeg";
+import concretePour from "../assets/concretePour.jpg";
 import { Helmet } from "react-helmet-async";
 
 function Gallery() {

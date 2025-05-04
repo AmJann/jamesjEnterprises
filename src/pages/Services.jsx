@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/services.css";
 import concrete from "../assets/concreteStock.jpg";
-import concreteHand from "../assets/stockConcreteHand.jpeg";
+import concreteHand from "../assets/stockConcreteHand.jpg";
 import ServicesList from "../components/ServicesList";
 import { Helmet } from "react-helmet-async";
 
