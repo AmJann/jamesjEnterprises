@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Form, Button, Container, Row, Col, Alert } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 import "../styles/contactForm.css";
@@ -10,6 +10,8 @@ const ContactForm = () => {
     phone: "",
     message: "",
   });
+
+  const formRef = useRef(null);
 
   const [submitted, setSubmitted] = useState(false);
   const [validated, setValidated] = useState(false);
@@ -30,18 +32,18 @@ const ContactForm = () => {
       e.stopPropagation();
     } else {
       e.preventDefault();
-      sendEmail();
+      sendEmail(form);
     }
 
     setValidated(true);
   };
 
-  const sendEmail = () => {
+  const sendEmail = (form) => {
     emailjs
-      .send(
+      .sendForm(
         import.meta.env.VITE_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
-        formData,
+        form, // ← pass the form element, not formData
         import.meta.env.VITE_USER_ID
       )
       .then(
@@ -52,13 +54,9 @@ const ContactForm = () => {
             response.text
           );
           setSubmitted(true);
-          setFormData({
-            name: "",
-            email: "",
-            phone: "",
-            message: "",
-          });
           setError(false);
+          form.reset(); // ← reset the actual form fields
+          setValidated(false);
         },
         (err) => {
           console.log("Failed to send contact form email...", err);
@@ -66,6 +64,17 @@ const ContactForm = () => {
         }
       );
   };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (submitted) {
+        setSubmitted(false);
+      }
+      setError(false);
+    }, 5000); // Clear the message after 5 seconds
+
+    return () => clearTimeout(timer);
+  }, [submitted, error]);
 
   return (
     <Container className="my-5">
@@ -86,7 +95,12 @@ const ContactForm = () => {
             </Alert>
           )}
 
-          <Form noValidate validated={validated} onSubmit={handleSubmit}>
+          <Form
+            noValidate
+            validated={validated}
+            onSubmit={handleSubmit}
+            ref={formRef}
+          >
             <Form.Group controlId="formName">
               <Form.Label>Name</Form.Label>
               <Form.Control
