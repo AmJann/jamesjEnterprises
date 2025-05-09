@@ -38,6 +38,11 @@ const Carousel = () => {
     "Charlotte County's Concrete Professionals since 1983",
     "Contact Us Today at",
   ];
+
+  const titles = [
+    "Charlotte County's Concrete Professionals since 1983",
+    "contact us today",
+  ];
   const descriptiveText = ["", "941-258-5134"];
 
   const [currentIndex, setCurrentIndex] = useState(1);
@@ -114,6 +119,7 @@ const Carousel = () => {
               className="slideImage1"
               src={image}
               alt={currentIndex % 2 ? alts[0] : alts[1]}
+              title={currentIndex % 2 ? titles[0] : titles[1]}
             />
             <div className="textContainer ">
               <header>
