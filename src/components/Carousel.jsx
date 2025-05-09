@@ -117,7 +117,7 @@ const Carousel = () => {
             />
             <div className="textContainer ">
               <header>
-                <h1 className="interFont carousel-text1">{currentMessage}</h1>
+                <h2 className="interFont carousel-text1">{currentMessage}</h2>
                 <h2 className="descriptionText1">
                   <a
                     aria-label="phone number"

@@ -19,9 +19,7 @@ function Home() {
           content="James Jankowski Enterprises offers top-quality concrete services including driveways, patios, and decorative concrete in Port Charlotte, FL."
         />
       </Helmet>
-      {/* <HeaderImg /> */}
       <Carousel />
-      {/* <FreeEstimates /> */}
       <div className="missionContactContainer">
         <MissionState />
         <ContactForm />

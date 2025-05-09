@@ -29,7 +29,7 @@ function Navbar() {
           James Jankowski{" "}
           <span className="interFontExtraLight">Enterprises</span>
         </h1>
-        <h1 className="montserratFontLight goldFont">Concrete Specialists</h1>
+        <h2 className="montserratFontLight goldFont">Concrete Specialists</h2>
       </div>
       <nav ref={navRef}>
         <Link

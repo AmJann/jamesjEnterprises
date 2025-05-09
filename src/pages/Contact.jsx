@@ -4,6 +4,7 @@ import "../styles/contact.css";
 import phone from "../assets/phone.jpeg";
 import ContactForm from "../components/ContactForm";
 import Phone from "../components/Phone";
+import phoneXS from "../assets/phoneXS.jpg";
 import { Helmet } from "react-helmet-async";
 
 function Contact() {
@@ -24,9 +25,20 @@ function Contact() {
         <div className="contactHeader">
           <h1 className="montserratFont contact">Contact</h1>
         </div>
-        <img src={concrete} alt="concrete texture" className="concrete"></img>
+        <img
+          loading="lazy"
+          src={concrete}
+          alt="concrete texture"
+          className="concrete"
+        ></img>
         <div className="concreteHandContainer">
-          <img src={phone} className="concreteHand"></img>
+          <img
+            loading="lazy"
+            src={phone}
+            srcSet={`${phone} 1x, ${phoneXS} .25x`}
+            className="concreteHand"
+            alt="Phone contact icon"
+          />
         </div>
       </header>
       <div className="contactIntroContainer">

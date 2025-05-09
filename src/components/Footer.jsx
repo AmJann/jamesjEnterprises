@@ -8,9 +8,9 @@ function Footer() {
     <footer>
       <div className="footerContainer montserratFont">
         <div className="contactContainer">
-          <h1 className="montserratFont footerCategory">
+          <h2 className="montserratFont footerCategory">
             James Jankowski Enterprises
-          </h1>
+          </h2>
           <h2 className="footerItem">
             <a
               href="tel:+19412043066"
@@ -19,34 +19,34 @@ function Footer() {
               {<FaPhoneAlt alt="phone" />} 941-204-3066
             </a>
           </h2>
-          <h1 className="footerItem goldFont">Hours:</h1>
-          <h2 className="footerItem">Weekdays 9am - 4pm</h2>
+          <h2 className="footerItem goldFont">Hours:</h2>
+          <h3 className="footerItem">Weekdays 9am - 4pm</h3>
         </div>
         <div>
-          <h1 className="footerCategory"> Serving</h1>
+          <h2 className="footerCategory"> Serving</h2>
           <div className="serviceAreaContainer">
             <div>
-              <h2 className="footerItem">
+              <h3 className="footerItem">
                 {<FaLocationArrow alt="arrow" />} Port Charlotte, FL
-              </h2>
-              <h2 className="footerItem">
+              </h3>
+              <h3 className="footerItem">
                 {<FaLocationArrow alt="arrow" />} Punta Gorda, FL
-              </h2>
-              <h2 className="footerItem">
+              </h3>
+              <h3 className="footerItem">
                 {" "}
                 {<FaLocationArrow alt="arrow" />} Englewood, FL
-              </h2>
+              </h3>
             </div>
             <div>
-              <h2 className="footerItem">
+              <h3 className="footerItem">
                 {<FaLocationArrow alt="arrow" />} North Port, FL
-              </h2>
-              <h2 className="footerItem">
+              </h3>
+              <h3 className="footerItem">
                 {<FaLocationArrow alt="arrow" />} Venice, FL
-              </h2>
-              <h2 className="footerItem">
+              </h3>
+              <h3 className="footerItem">
                 {<FaLocationArrow alt="arrow" />} Arcadia, FL
-              </h2>
+              </h3>
             </div>
           </div>
         </div>
